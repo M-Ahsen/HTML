@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic structure</title>
+</head>
+<body>
+
+    <!-- Headings -->
+    <h1>Library</h1>
+    <h2>Library</h2>
+    <h3>Library</h3>
+    <h4>Library</h4>
+    <h5>Library</h5>
+    <h6>Library</h6>
+
+    <!-- Paragraph -->
+    <p>There are a lot of books to read in this library</p>
+
+    <!-- Tag for horizontal line -->
+    <hr>
+
+    <!-- <br> "break" tag is used for adding a new line -->
+
+    <!-- Bold tags -->
+    <b>This is a bold text <br></b>
+
+    <!-- Italic tags -->
+    <i>This is an Italic text <br></i>
+
+    <!-- Underline tag -->
+    <u>This is an underlined text <br></u>
+
+    <hr>
+
+    <!-- Big tag -->
+    <big>This is Big <br></big>
+
+    <!-- Small tag -->
+    <small>This is Small <br></small>
+
+    <hr>
+
+    <!-- Subscrept and superscrept -->
+    <p>
+        C + O<sub>2</sub> &rarr; CO<sub>2</sub>
+    <br>
+        a<sup>2</sup> - b<sup>2</sup> = (a+b)(a-b)
+    <br>
+    </p>
+
+    <hr>
+
+    <!-- For as it is display use <pre> tag -->
+    <pre>
+        class BubbleSorting {
+
+            public static void main(String[] args) {
+                int[] arr = {22,6,3,2345,34,56,8,56,35,34,67,6,3,4,7,4};
+
+                for(int i=0;i<arr.length-1;i++)
+                    for(int j=0; j<arr.length-1-i ; j++) {
+                        if(arr[j]>arr[j+1]){
+                        int temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                        }
+                    }
+
+                System.out.print("Sorted array = ");
+
+                for(int i=0;i<arr.length;i++)
+                    System.out.print(arr[i]+" ");
+            }
+        } 
+    </pre>
+
+    
+</body>
+</html>
